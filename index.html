@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akula Sujan | AI Engineer & Full-Stack Developer</title>
+    <meta name="description" content="Official Personal Portfolio of Akula Sujan - AI Engineer, GenAI, RAG Architect, MCP Developer, and Full-Stack Web Developer.">
+    <meta name="keywords" content="Akula Sujan, AI Engineer, GenAI, RAG, MCP, Model Context Protocol, FastAPI, MERN Stack, Python, Cybersecurity, Codolio iaVcueXaR, LeetCode, CodeChef">
+    <meta name="author" content="Akula Sujan">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Portfolio CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Canvas & Background Grid -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="cyber-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-navbar">
+        <a href="#hero" class="nav-brand">
+            <div class="brand-badge-icon" style="width:34px; height:34px; border-radius:10px; background:var(--gradient-primary); display:flex; align-items:center; justify-content:center; color:#000; font-weight:800; font-family:var(--font-heading);">AS</div>
+            <span class="brand-name">Akula Sujan</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#coding-platforms">Coding Platforms</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <!-- Codolio Profile Button -->
+            <a href="https://codolio.com/profile/iaVcueXaR" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn" aria-label="Codolio Profile" title="Codolio Profile (@iaVcueXaR)" style="font-size:1.1rem; text-decoration:none;">
+                🦉
+            </a>
+
+            <!-- GitHub Logo Button -->
+            <a href="https://github.com/Sujan833" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn" aria-label="GitHub Profile (Sujan833)" title="GitHub Profile (Sujan833)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+
+            <!-- LinkedIn Logo Button -->
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+
+            <!-- Resume Button -->
+            <button class="btn btn-secondary" onclick="openResumeModal()" style="padding: 6px 14px; font-size: 0.85rem;">
+                <i data-lucide="file-text" style="width:14px; height:14px;"></i> View Resume
+            </button>
+
+            <!-- Theme Toggle Switch -->
+            <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Light/Dark Theme">
+                <i data-lucide="moon" style="width:18px; height:18px;"></i>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Mobile Menu">
+                <i data-lucide="menu" style="width:20px; height:20px;"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <span class="pulse-dot"></span>
+                    <span>Available for AI & Full-Stack Engineering Roles</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Akula Sujan</span>
+                </h1>
+
+                <div class="typewriter-text">
+                    &gt; <span id="typewriter"></span>
+                </div>
+
+                <p class="hero-description">
+                    Engineer with hands-on experience building full-stack, GenAI, Multimodal RAG, Autonomous AI Agents (MCP/FastMCP), and Cybersecurity applications. Proficient in Python, Java, JavaScript, SQL, FastAPI, LangChain, Hugging Face Transformers, Open-Source LLMs, PyTorch, IBM Granite, Gemini APIs, FAISS & BM25 Vector Search, and the MERN Stack (React, Node.js, Express, MongoDB).
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="sparkles" style="width:18px; height:18px;"></i> Explore Projects
+                    </a>
+                    <button class="btn btn-secondary" onclick="openResumeModal()">
+                        <i data-lucide="file-text" style="width:18px; height:18px;"></i> View Resume
+                    </button>
+                    <a href="https://nlp-driven-cyber-threat-intelligence.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="text-decoration:none;">
+                        <i data-lucide="external-link" style="width:18px; height:18px;"></i> Run SOC Agent Live Demo
+                    </a>
+                </div>
+
+                <div class="hero-contact-strip">
+                    <a href="https://codolio.com/profile/iaVcueXaR" target="_blank" rel="noopener noreferrer" class="contact-item" style="text-decoration:none;">
+                        <span style="font-size:1.1rem;">🦉</span>
+                        <span>Codolio Profile</span>
+                    </a>
+                    <a href="https://github.com/Sujan833" target="_blank" rel="noopener noreferrer" class="contact-item" style="text-decoration:none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan);"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub (Sujan833)</span>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-item" style="text-decoration:none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan);"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <div class="contact-item" onclick="copyToClipboard('sujanphani964@gmail.com', 'Email')">
+                        <i data-lucide="mail" style="width:16px; height:16px; color:var(--accent-cyan);"></i>
+                        <span>sujanphani964@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual Card (Cyber Code Engine Widget - No Avatar) -->
+            <div class="hero-visual">
+                <div class="glass-card" style="width: 100%; border-color: var(--border-glow); box-shadow: var(--shadow-glow); padding: 24px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">
+                        <div style="display:flex; gap:6px;">
+                            <span style="width:12px; height:12px; border-radius:50%; background:#ff5f56; display:inline-block;"></span>
+                            <span style="width:12px; height:12px; border-radius:50%; background:#ffbd2e; display:inline-block;"></span>
+                            <span style="width:12px; height:12px; border-radius:50%; background:#27c93f; display:inline-block;"></span>
+                        </div>
+                        <span style="font-family:var(--font-code); font-size:0.78rem; color:var(--accent-cyan);">sujan_ai_engine.py</span>
+                    </div>
+
+                    <pre style="font-family:var(--font-code); font-size:0.84rem; color:var(--text-muted); line-height:1.6; overflow-x:auto;">
+<span style="color:var(--accent-purple);">class</span> <span style="color:var(--accent-cyan);">AkulaSujan</span>:
+    <span style="color:var(--accent-purple);">def</span> <span style="color:var(--accent-blue);">__init__</span>(self):
+        self.name = <span style="color:#a7f3d0;">"Akula Sujan"</span>
+        self.role = <span style="color:#a7f3d0;">"AI & Full-Stack Engineer"</span>
+        self.problems_solved = <span style="color:#a7f3d0;">"600+"</span>
+        self.active_coding_days = <span style="color:#a7f3d0;">"100+ Days"</span>
+        self.github = <span style="color:#a7f3d0;">"github.com/Sujan833"</span>
+        
+    <span style="color:var(--accent-purple);">def</span> <span style="color:var(--accent-blue);">build_solution</span>(self, problem):
+        <span style="color:var(--accent-purple);">return</span> AI_Agent(tools=[FastMCP, LangChain, RAG]).deploy()
+
+<span style="color:var(--text-subtle);"># Applied Real-World Core Engineering</span></pre>
+
+                    <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+                        <span class="tag-badge"><i data-lucide="cpu" style="width:12px; height:12px;"></i> Multimodal RAG</span>
+                        <span class="tag-badge"><i data-lucide="shield" style="width:12px; height:12px;"></i> SOC Agent (MCP)</span>
+                        <span class="tag-badge"><i data-lucide="zap" style="width:12px; height:12px;"></i> FastAPI & MERN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section" id="about">
+            <div class="stats-grid" id="hero-stats-grid">
+                <!-- Dynamically populated from JS -->
+            </div>
+        </section>
+
+        <!-- Coding Platforms Section -->
+        <section style="padding: 60px 0;" id="coding-platforms">
+            <div class="section-title-wrap">
+                <div class="section-subtitle">Problem Solving & Algorithms</div>
+                <h2 class="section-main-title">Competitive Programming & Coding Platforms</h2>
+            </div>
+
+            <div id="coding-platforms-container">
+                <!-- Dynamically populated from JS -->
+            </div>
+        </section>
+
+        <!-- Internships Section -->
+        <section style="padding: 60px 0;" id="internships">
+            <div class="section-title-wrap">
+                <div class="section-subtitle">Experience</div>
+                <h2 class="section-main-title">Internships</h2>
+            </div>
+
+            <div class="timeline-grid" id="internships-container">
+                <!-- Dynamically populated from JS -->
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h3 style="font-family:var(--font-heading); font-size:1.4rem; margin-bottom:20px; color:var(--text-main);">Experience</h3>
+                <div class="timeline-grid" id="experience-container">
+                    <!-- Dynamically populated from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section style="padding: 60px 0;" id="projects">
+            <div class="section-title-wrap">
+                <div class="section-subtitle">Featured Work</div>
+                <h2 class="section-main-title">Projects</h2>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="tab-btn active" onclick="filterProjects('all', this)">All Projects</button>
+                <button class="tab-btn" onclick="filterProjects('genai', this)">GenAI & RAG</button>
+                <button class="tab-btn" onclick="filterProjects('security', this)">AI Agents & Security</button>
+                <button class="tab-btn" onclick="filterProjects('fullstack', this)">Full-Stack MERN</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Dynamically populated from JS -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section style="padding: 60px 0;" id="skills">
+            <div class="section-title-wrap">
+                <div class="section-subtitle">Technical Proficiency</div>
+                <h2 class="section-main-title">Technical Skills & Interests</h2>
+            </div>
+
+            <div class="skills-grid" id="skills-grid">
+                <!-- Dynamically populated from JS -->
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section style="padding: 60px 0;" id="certifications">
+            <div class="section-title-wrap">
+                <div class="section-subtitle">Verified Credentials</div>
+                <h2 class="section-main-title">Certifications</h2>
+            </div>
+
+            <div class="grid-2col" id="certifications-grid">
+                <!-- Dynamically populated from JS -->
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section style="padding: 60px 0;" id="education">
+            <div class="section-title-wrap">
+                <div class="section-subtitle">Academic Background</div>
+                <h2 class="section-main-title">Education</h2>
+            </div>
+
+            <div id="education-container">
+                <!-- Dynamically populated from JS -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section style="padding: 60px 0; text-align: center;" id="contact">
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto; padding: 48px 32px;">
+                <div class="section-subtitle">Let's Connect</div>
+                <h2 style="font-family:var(--font-heading); font-size:2.2rem; margin-bottom:16px;">Have a Project or Opportunity?</h2>
+                <p style="color:var(--text-muted); max-width:600px; margin: 0 auto 32px auto;">
+                    I am actively seeking AI Engineering and Full-Stack Web Development roles. Connect with me on Codolio, GitHub, or via email!
+                </p>
+
+                <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+                    <a href="https://codolio.com/profile/iaVcueXaR" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="text-decoration:none;">
+                        🦉 Codolio Profile
+                    </a>
+                    <a href="https://github.com/Sujan833" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="text-decoration:none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        GitHub (Sujan833)
+                    </a>
+                    <button class="btn btn-secondary" onclick="copyToClipboard('sujanphani964@gmail.com', 'Email')">
+                        <i data-lucide="mail"></i> Email Me
+                    </button>
+                    <button class="btn btn-secondary" onclick="openResumeModal()">
+                        <i data-lucide="file-text"></i> View Resume
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Interactive Modal -->
+    <div class="modal-overlay" id="interactive-modal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+                <i data-lucide="x" style="width:20px; height:20px;"></i>
+            </button>
+            <div id="modal-body-content">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="display:flex; flex-direction:column; align-items:center; gap:16px;">
+            <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+                <a href="https://codolio.com/profile/iaVcueXaR" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted); text-decoration:none; display:flex; align-items:center; gap:6px;">
+                    🦉 Codolio Profile (@iaVcueXaR)
+                </a>
+                <a href="https://github.com/Sujan833" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted); text-decoration:none; display:flex; align-items:center; gap:6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub (Sujan833)
+                </a>
+                <a href="mailto:sujanphani964@gmail.com" style="color:var(--text-muted); text-decoration:none; display:flex; align-items:center; gap:6px;">
+                    <i data-lucide="mail" style="width:16px; height:16px;"></i> sujanphani964@gmail.com
+                </a>
+            </div>
+            <p>© 2026 Akula Sujan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Portfolio JS Data & Logic -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // Initialize Lucide icons on DOM ready
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

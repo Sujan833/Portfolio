@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Akula Sujan - Resume</title>
+    <style>
+        @page {
+            size: letter portrait;
+            margin: 0.5in;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #000000;
+            background: #ffffff;
+            line-height: 1.35;
+            font-size: 10.5pt;
+            padding: 20px 30px;
+        }
+        a {
+            color: #0000ee;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .name {
+            font-size: 24pt;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .contact {
+            font-size: 9.5pt;
+        }
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-top: 14px;
+            margin-bottom: 2px;
+        }
+        hr {
+            border: none;
+            border-bottom: 0.8px solid #000000;
+            margin-bottom: 6px;
+        }
+        .summary-text {
+            text-align: justify;
+        }
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .item-title {
+            font-weight: bold;
+        }
+        .item-subtitle {
+            font-style: italic;
+        }
+        .item-date, .item-location {
+            font-size: 10pt;
+            color: #000000;
+        }
+        ul.bullet-list {
+            list-style-type: disc;
+            padding-left: 18px;
+            margin-top: 2px;
+            margin-bottom: 6px;
+        }
+        ul.bullet-list li {
+            margin-bottom: 3px;
+        }
+        .blue-link {
+            color: #0000ee;
+            font-weight: bold;
+        }
+        .tech-skills-list {
+            list-style-type: disc;
+            padding-left: 18px;
+            margin-top: 2px;
+        }
+        .tech-skills-list li {
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 class="name">Akula Sujan</h1>
+        <div class="contact">
+            ✉ <a href="mailto:sujanphani964@gmail.com">sujanphani964@gmail.com</a> &nbsp;|&nbsp;
+            🔗 <a href="https://linkedin.com/" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+            💻 <a href="https://github.com/Sujan833" target="_blank">GitHub</a> &nbsp;|&nbsp;
+            📞 +91-8121223075
+        </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section-title">Summary</div>
+    <hr>
+    <p class="summary-text">
+        Engineer with hands-on experience building full-stack, GenAI, RAG, AI-agent, and cybersecurity applications using Python, Java, JavaScript, FastAPI, MCP, LangChain, and MERN, with experience in backend APIs and automation.
+    </p>
+
+    <!-- Education -->
+    <div class="section-title">Education</div>
+    <hr>
+    <div style="margin-bottom: 6px;">
+        <div class="item-row">
+            <div>• <span class="item-title">Vignan’s Lara Institute of Technology and Science</span></div>
+            <div class="item-location">Vadlamudi, India</div>
+        </div>
+        <div class="item-row" style="padding-left: 12px;">
+            <div class="item-subtitle">B.Tech in Computer Science and Engineering (Artificial Intelligence) — <strong>CGPA: 8.1</strong></div>
+            <div class="item-date">2022 – 2026</div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+        <div class="item-row">
+            <div>• <span class="item-title">NRI Junior College</span></div>
+            <div class="item-location">Tenali, India</div>
+        </div>
+        <div class="item-row" style="padding-left: 12px;">
+            <div class="item-subtitle">Intermediate (Class XII) – MPC Stream — <strong>Percentage: 91.2%</strong></div>
+            <div class="item-date">2020 – 2022</div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+        <div class="item-row">
+            <div>• <span class="item-title">Viveka High School</span></div>
+            <div class="item-location">Angalakuduru, India</div>
+        </div>
+        <div class="item-row" style="padding-left: 12px;">
+            <div class="item-subtitle">Secondary School (Class X) — <strong>CGPA: 10.0</strong></div>
+            <div class="item-date">2019 – 2020</div>
+        </div>
+    </div>
+
+    <!-- Internship -->
+    <div class="section-title">Internship</div>
+    <hr>
+    
+    <div style="margin-bottom: 8px;">
+        <div class="item-row">
+            <div>• <a href="#" class="blue-link">AI Engineer Intern</a></div>
+            <div class="item-date">May 2026 – July 2026</div>
+        </div>
+        <div class="item-subtitle" style="padding-left: 12px;">IIT Hyderabad</div>
+        <ul class="bullet-list" style="padding-left: 28px;">
+            <li>Built a <a href="#" class="blue-link">Multimodal Self-Healing RAG assistant</a> using OCR, FAISS, BM25, and reranking for grounded retrieval from legal, compliance, and scanned documents.</li>
+            <li>Designed secure document processing workflows with grounded answer generation, metadata filtering, and semantic search to support regulatory compliance, security policy analysis.</li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 8px;">
+        <div class="item-row">
+            <div>• <a href="#" class="blue-link">Generative AI Engineer Intern</a></div>
+            <div class="item-date">May 2025 – July 2025</div>
+        </div>
+        <div class="item-subtitle" style="padding-left: 12px;">SmartBridge | IBM Cloud</div>
+        <ul class="bullet-list" style="padding-left: 28px;">
+            <li>Developed a <a href="#" class="blue-link">HealthAI: Intelligent Healthcare Assistant</a> using IBM Granite, enabling real-time disease prediction, patient chat, and treatment planning.</li>
+            <li>Integrated IBM Watson Machine Learning APIs to deliver AI-driven medical recommendations with personalized insights and data-backed decision support with reduced latency by 30%.</li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 8px;">
+        <div class="item-row">
+            <div>• <a href="#" class="blue-link">Web Development Engineer Intern</a></div>
+            <div class="item-date">Jan 2025 – Mar 2025</div>
+        </div>
+        <div class="item-subtitle" style="padding-left: 12px;">EY Global Delivery Services | AICTE</div>
+        <ul class="bullet-list" style="padding-left: 28px;">
+            <li>Engineered full-stack MERN applications including a recipe-sharing platform (<a href="#" class="blue-link">FOODIEE</a>) and a financial <a href="#" class="blue-link">Expense Tracker</a>, optimizing state management and database query efficiency.</li>
+        </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="section-title">Experience</div>
+    <hr>
+
+    <div style="margin-bottom: 8px;">
+        <div class="item-row">
+            <div>• <span class="item-title">AI Evaluator & Aether Generalist</span></div>
+            <div class="item-date">2024 – Present</div>
+        </div>
+        <div class="item-subtitle" style="padding-left: 12px;">Outlier | Remote Freelance Work</div>
+        <ul class="bullet-list" style="padding-left: 28px;">
+            <li>Evaluated Large Language Model responses for factual accuracy, logical reasoning, instruction following, and response safety.</li>
+            <li>Verified and annotated multimodal model outputs including detailed voice/audio transcriptions, image analysis, and visual reasoning data to support AI model alignment.</li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 8px;">
+        <div class="item-row">
+            <div>• <span class="item-title">AI Data Annotator</span></div>
+            <div class="item-date">2024</div>
+        </div>
+        <div class="item-subtitle" style="padding-left: 12px;">Atlas Capture | Remote Freelance Work</div>
+        <ul class="bullet-list" style="padding-left: 28px;">
+            <li>Labeled and annotated complex multi-modal image and video datasets according to project specifications to ensure high-precision data quality for training computer vision models.</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="section-title">Projects</div>
+    <hr>
+    
+    <div style="margin-bottom: 8px;">
+        <div class="item-row">
+            <div>• <a href="#" class="blue-link">Automated Full-Stack Application Builder</a></div>
+        </div>
+        <div class="item-subtitle" style="padding-left: 12px;">FastAPI | Gemini APIs | LangChain | Render | GitHub</div>
+        <ul class="bullet-list" style="padding-left: 28px;">
+            <li>Built an AI-powered full-stack website builder that generates frontend, backend, database, and API integrations from natural language requirements, reducing development effort by 70% through automation.</li>
+            <li>Designed for dynamic feature updates and automated deployment in full-stack applications.</li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 8px;">
+        <div class="item-row">
+            <div>• <a href="#" class="blue-link">AI Cybersecurity SOC Agent using MCP</a></div>
+        </div>
+        <div class="item-subtitle" style="padding-left: 12px;">Python | FastMCP | FastAPI | Security APIs</div>
+        <ul class="bullet-list" style="padding-left: 28px;">
+            <li>Architected an <a href="#" class="blue-link">NLP-based AI SOC Analyst</a> using FastAPI and FastMCP to orchestrate 6 security intelligence tools (AbuseIPDB, VirusTotal, NVD) for automated threat analysis.</li>
+            <li>Built an LLM orchestration engine to collect JSON evidence and generate automated SOC incident reports.</li>
+        </ul>
+    </div>
+
+    <!-- Technical Skills and Interests -->
+    <div class="section-title">Technical Skills and Interests</div>
+    <hr>
+    <ul class="tech-skills-list">
+        <li><strong>Languages:</strong> Python, Java, JavaScript, SQL, HTML/CSS.</li>
+        <li><strong>Areas of Interest:</strong> Generative AI, LLMs, AI Agents, AI Security & Cybersecurity, Full-Stack Development.</li>
+        <li><strong>Relevant Coursework:</strong> DBMS, Operating Systems & Security, Data Structures & Algorithms, OOP.</li>
+        <li><strong>Tools & Platforms:</strong> Model Context Protocol (MCP), FastMCP, RAG, LangChain, FastAPI, MongoDB, GitHub.</li>
+    </ul>
+
+    <!-- Certifications -->
+    <div class="section-title">Certifications</div>
+    <hr>
+    <ul class="bullet-list" style="padding-left: 18px;">
+        <li><a href="#" class="blue-link">Generative AI in Action</a> — IBM SkillsBuild.</li>
+        <li><a href="#" class="blue-link">Python Foundation</a> — Infosys Springboard, Udemy, Cisco.</li>
+        <li><a href="#" class="blue-link">Full Stack Web Development</a> — Edunet, Udemy.</li>
+        <li><a href="#" class="blue-link">Data Structures and Algorithms using Java</a> — NPTEL [Elite].</li>
+        <li><a href="#" class="blue-link">Operating Systems and Security, Java Programming Fundamentals</a> — EDX.</li>
+        <li><a href="#" class="blue-link">Cyber Threat Management, Junior CyberSecurity Analyst</a> — Cisco.</li>
+    </ul>
+
+</body>
+</html>
