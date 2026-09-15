@@ -187,7 +187,7 @@ const portfolioData = {
         "Engineered full-stack MERN applications including a recipe-sharing platform (FOODIEE) and a financial Expense Tracker, optimizing state management and database query efficiency."
       ],
       githubUrl: "https://github.com/Sujan833",
-      liveUrl: "https://foodiee-1.onrender.com/"
+      liveUrl: "https://foodiee-rvkf.onrender.com/"
     },
     {
       id: "expense-tracker",
