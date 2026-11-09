@@ -8,7 +8,7 @@ const portfolioData = {
     github: "https://github.com/Sujan833",
     linkedin: "https://linkedin.com/",
     codolio: "https://codolio.com/profile/iaVcueXaR",
-    summary: "Engineer with hands-on experience building full-stack, GenAI, RAG, AI-agent, and cybersecurity applications using Python, Java, JavaScript, FastAPI, MCP, LangChain, and MERN, with experience in backend APIs and automation."
+    summary: "Engineer with hands-on experience building full-stack, GenAI, LLM Fine-Tuning (QLoRA), RAG, AI-agent, and cybersecurity applications using Python, PyTorch, Hugging Face, FastAPI, MCP, LangChain, and MERN."
   },
   
   stats: [
@@ -94,6 +94,27 @@ const portfolioData = {
   ],
 
   projects: [
+    {
+      id: "universal-qlora",
+      title: "Universal QLoRA Fine-Tuner for LLMs",
+      subtitle: "PyTorch | Unsloth | Hugging Face PEFT | BitsAndBytes | TRL",
+      category: "genai",
+      featured: true,
+      tech: ["PyTorch", "Unsloth", "Hugging Face", "QLoRA", "PEFT", "BitsAndBytes", "TRL", "Qwen2.5"],
+      metrics: "4-Bit NF4 Quantization • Unsloth & LoRA Adapters • 2,742 Steps • Tesla T4 GPU",
+      description: "Production-grade, modular LLM fine-tuning framework optimized for QLoRA (4-bit BitsAndBytes quantization + LoRA adapters) on single-GPU hardware. Successfully fine-tuned Qwen2.5-3B-Instruct for domain-specific conversational intelligence and cybersecurity reasoning with accelerated Unsloth & TRL pipelines.",
+      highlights: [
+        "Built a modular dataset pipeline with automatic schema detection, canonical message normalization, duplicate removal, and tokenizer chat template formatting.",
+        "Integrated 4-bit NF4 double-quantization with dynamic compute dtype selection (float16 for Tesla T4 Turing GPUs to fix cuBLAS runtime errors, bfloat16 for Ampere/Hopper).",
+        "Configured LoRA rank adapters across all attention & MLP projection layers (q, k, v, o, gate, up, down) with gradient checkpointing and 8-bit AdamW optimizer.",
+        "Trained Qwen2.5-3B-Instruct over 2,742 steps (2 full epochs), reducing training loss from >2.5 to 0.9904 with 82.4% token accuracy and zero OOM errors on a single 16GB Tesla T4 GPU.",
+        "Demonstrated end-to-end execution in Google Colab with pre/post-training inference validation, checkpoint persistence, and fast standalone model reloading."
+      ],
+      githubUrl: "https://github.com/Sujan833/QLORA",
+      liveUrl: "https://colab.research.google.com/drive/1ZG3bTMJOeMSSx4Urrrjs3APkj08nIHFU?usp=sharing",
+      liveLabel: "Google Colab",
+      liveIcon: "external-link"
+    },
     {
       id: "soc-agent",
       title: "AI Cybersecurity SOC Agent using MCP",
@@ -210,7 +231,7 @@ const portfolioData = {
     languages: "Python, Java, JavaScript, SQL, HTML/CSS.",
     areasOfInterest: "Generative AI, LLMs, AI Agents, AI Security & Cybersecurity, Full-Stack Development.",
     relevantCoursework: "DBMS, Operating Systems & Security, Data Structures & Algorithms, OOP.",
-    toolsAndPlatforms: "Model Context Protocol (MCP), FastMCP, RAG, LangChain, FastAPI, MongoDB, GitHub."
+    toolsAndPlatforms: "Model Context Protocol (MCP), FastMCP, QLoRA, PEFT, BitsAndBytes, RAG, LangChain, FastAPI, MongoDB, GitHub."
   },
 
   skills: [
@@ -221,6 +242,7 @@ const portfolioData = {
     { name: "HTML/CSS", category: "languages", level: 95, icon: "layout" },
     
     { name: "Generative AI & LLMs", category: "ai", level: 96, icon: "sparkles" },
+    { name: "LLM Fine-Tuning (QLoRA & PEFT)", category: "ai", level: 94, icon: "cpu" },
     { name: "AI Agents (MCP / FastMCP)", category: "ai", level: 94, icon: "bot" },
     { name: "RAG & Vector Search", category: "ai", level: 92, icon: "cpu" },
     { name: "LangChain", category: "ai", level: 90, icon: "link" },

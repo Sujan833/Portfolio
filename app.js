@@ -281,7 +281,7 @@ function renderProjects(filter = 'all') {
           </a>
           ${p.liveUrl ? `
             <a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:5px 12px; font-size:0.78rem; text-decoration:none;">
-              <i data-lucide="external-link" style="width:13px; height:13px;"></i> Live Demo
+              <i data-lucide="${p.liveIcon || 'external-link'}" style="width:13px; height:13px;"></i> ${p.liveLabel || 'Live Demo'}
             </a>
           ` : ''}
         </div>
